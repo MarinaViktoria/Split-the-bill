@@ -1,0 +1,161 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1514890547357-a9ee288728e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8aFFlVG9uVFJzeE18fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: #820000;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  margin-top: 5px;
+}
+#italy {
+  font-size: 20px;
+  margin-top: 30px;
+}
+#allContainers {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#container1,
+#container2 {
+  background-color: #c6dce4;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 320px;
+  border: 1px solid #53bf9d;
+  border-radius: 40px;
+}
+p {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  margin-left: 10px;
+}
+input {
+  font-family: "Dancing Script", cursive;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  width: 60%;
+  margin-left: 10px;
+  transition: transform 1s;
+}
+input:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #b7f6e2;
+}
+#btn {
+  font-size: 15px;
+  background-color: #53bf9d;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 10px;
+  margin-top: 20px;
+  transition: transform 1s;
+}
+#btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#spentTogether,
+#spentEach {
+  display: flex;
+  flex-direction: column;
+  background-color: #c6dce4;
+  opacity: 0;
+  width: 150px;
+  height: 170px;
+  border: 1px solid #53bf9d;
+  border-radius: 40px;
+}
+#price {
+  margin-left: 10px;
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+  align-self: center;
+}
+#paidTogether,
+#paidPerPerson {
+  padding: 10px;
+  align-self: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 15px;
+}
+
+@media all and (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+  #allContainers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #container1,
+  #container2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 240px;
+  }
+  .data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  input {
+    width: 50%;
+    height: 20px;
+    margin-right: 10px;
+  }
+  input:hover {
+    transform: scale(1.05);
+  }
+  #btn {
+    align-self: center;
+    padding: 10px;
+    width: 30%;
+    margin-top: -5px;
+  }
+  #spentTogether,
+  #spentEach {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 50px;
+    padding: 5%;
+  }
+  .data {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media all and (max-width: 800px) {
+  h1 {
+    font-size: 30px;
+  }
+  input {
+    width: 40%;
+    height: 20px;
+    margin-right: 10px;
+  }
+}

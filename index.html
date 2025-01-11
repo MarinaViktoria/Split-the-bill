@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Split our Bills</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <h4 id="italy">💚🤍💗</h4>
+      <h1></h1>
+    </div>
+    <div id="allContainers">
+      <div id="container1">
+        <div class="data">
+          <p>✈️ Flight</p>
+          <input type="text" id="flight" placeholder="Flight" />
+        </div>
+        <div class="data">
+          <p>🛏️ Hotel</p>
+          <input type="text" id="hotel" placeholder="Hotel" />
+        </div>
+        <div class="data">
+          <p>🍕 Food and Drinks</p>
+          <input type="text" id="foodAndDrinks" placeholder="Food and Drinks" />
+        </div>
+      </div>
+      <div id="container2">
+        <div class="data">
+          <p>🏰 Sightseeing</p>
+          <input type="text" id="sightseeing" placeholder="Sightseeing" />
+        </div>
+        <div class="data">
+          <p>😊 Number of people</p>
+          <input type="text" id="people" placeholder="How many people?" />
+        </div>
+        <br />
+        <button id="btn">Calculate</button>
+      </div>
+      <div id="spentTogether">
+        <p>How much did we spend together?</p>
+        <div class="price-data">
+          <span id="price">€</span>
+          <span id="paidTogether"></span>
+        </div>
+      </div>
+      <div id="spentEach">
+        <p>How much did each of us spend?</p>
+        <div class="price-data">
+          <span id="price">€</span>
+          <span id="paidPerPerson"></span>
+          <span id="price">per Person</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
