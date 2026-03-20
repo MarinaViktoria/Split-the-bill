@@ -107,20 +107,20 @@ input:focus {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease;
-  opacity: 1 !important;
 }
+
 
 #btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-#btn:active {
-  transform: scale(0.97);
+#btn:activorm: scale(0.97);
 }
 
 #spentTogether,
-#spentEach {
+#spentEach {e {
+  transf
   align-items: center;
   text-align: center;
 }
