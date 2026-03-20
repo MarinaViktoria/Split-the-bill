@@ -23,9 +23,10 @@ tl.from("h1", { opacity: 0, y: -20, duration: 1 })
   }, "-=0.5")
   .from("#btn", {
   y: 20,
-  opacity: 0,
+  autoAlpha: 0,
   duration: 0.4,
-  ease: "power2.out"
+  ease: "power2.out",
+  clearProps: "all"
 }, "-=0.3")
   .from("#spentTogether, #spentEach", {
     y: 30,
