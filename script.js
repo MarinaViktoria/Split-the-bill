@@ -22,11 +22,11 @@ tl.from("h1", { opacity: 0, y: -20, duration: 1 })
     duration: 0.4
   }, "-=0.5")
   .from("#btn", {
-    scale: 0.9,
-    opacity: 0,
-    duration: 0.4,
-    ease: "back.out(1.7)"
-  }, "-=0.3")
+  y: 20,
+  opacity: 0,
+  duration: 0.4,
+  ease: "power2.out"
+}, "-=0.3")
   .from("#spentTogether, #spentEach", {
     y: 30,
     opacity: 0,
