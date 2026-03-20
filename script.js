@@ -63,7 +63,3 @@ function calculateExpenses(e) {
   document.querySelector("#paidPerPerson").textContent = amountEach.toFixed(2);
 }
 
-/*amountEach = amountEach.toFixed(2);
-    amountTogether = amountTogether.toFixed(2);*/
-
-/*flight === "" || hotel === "" || foodAndDrinks === "" || sightseeing === "" || people === "" || */
