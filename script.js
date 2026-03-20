@@ -10,12 +10,30 @@ function type() {
 }
 type();
 
-gsap.to("#container1", { opacity: 0.9, delay: 2.5, duration: 3 });
-gsap.to("#container2", { opacity: 0.9, delay: 3.5, duration: 3 });
-gsap.to("#spentTogether", { opacity: 0.9, delay: 4.5, duration: 3 });
-gsap.to("#spentEach", { opacity: 0.9, delay: 5.5, duration: 3 });
+const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-gsap.from("h4", { y: -100, delay: 5.5, duration: 2 });
+tl.from("h1", { opacity: 0, y: -20, duration: 1 })
+  .from("#container1", { y: 50, opacity: 0, duration: 0.8 }, "-=0.5")
+  .from("#container2", { y: 50, opacity: 0, duration: 0.8 }, "-=0.5")
+  .from(".data", {
+    y: 20,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 0.4
+  }, "-=0.5")
+  .from("#btn", {
+    scale: 0.9,
+    opacity: 0,
+    duration: 0.4,
+    ease: "back.out(1.7)"
+  }, "-=0.3")
+  .from("#spentTogether, #spentEach", {
+    y: 30,
+    opacity: 0,
+    stagger: 0.2,
+    duration: 0.6
+  }, "-=0.4");
+
 
 const button = document.querySelector("#btn");
 button.addEventListener("click", calculateExpenses);
